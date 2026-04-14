@@ -1,0 +1,72 @@
+# Replit configuration file
+# This tells Replit how to run your project
+
+# Main run command - generates site and starts server
+run = "python generate.py && python serve_replit.py"
+
+# Language
+language = "python3"
+modules = ["python-3.12", "web", "nodejs-20", "postgresql-16"]
+
+# Deploy command (same as run)
+[deploy]
+run = ["sh", "-c", "python generate.py && python serve_replit.py"]
+
+[nix]
+channel = "stable-25_05"
+
+[agent]
+expertMode = true
+
+[userenv]
+
+[userenv.shared]
+ENV = "production"
+PYTHONUNBUFFERED = "1"
+
+[userenv.production]
+BASE_URL = "https://atlsoccerhub.com"
+ALLOWED_ORIGINS = "https://atlsoccerhub.com"
+
+[userenv.development]
+BASE_URL = "https://cbcd7b0a-f38a-41bd-b835-8fd502199266-00-2iosedex55sv0.picard.replit.dev"
+ALLOWED_ORIGINS = "https://cbcd7b0a-f38a-41bd-b835-8fd502199266-00-2iosedex55sv0.picard.replit.dev"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Start application"
+
+[[workflows.workflow]]
+name = "Start application"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "SKIP_GENERATION=1 python serve_replit.py"
+waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[deployment]
+deploymentTarget = "autoscale"
+run = ["python", "serve_replit.py"]
+build = ["python", "generate.py"]
+
+# Replit Secrets (production): SECRET_KEY, ALLOWED_ORIGINS (comma-separated https origins),
+# LEADS_WEB_APP_URL, ADMIN_PASSWORD_HASH or config.py, DATABASE_URL if using Postgres.
+# Optional: PEXELS_API_KEY, PIXABAY_API_KEY for richer media on rebuild.
+# Prefer Secrets over [userenv] for production; userenv above documents Atlanta defaults.
+

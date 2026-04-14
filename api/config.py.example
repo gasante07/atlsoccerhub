@@ -1,0 +1,20 @@
+# Configuration template
+# Copy this file to config.py and update with your values
+
+# Database configuration
+DATABASE_PATH = "api/leads.db"
+
+# Admin password (will be hashed). Can also be set via ADMIN_PASSWORD_HASH env var (e.g. Replit Secrets).
+# Generate hash using: python -c "from werkzeug.security import generate_password_hash; print(generate_password_hash('your_password'))"
+ADMIN_PASSWORD_HASH = "pbkdf2:sha256:600000$..."
+
+# Rate limiting
+RATE_LIMIT_PER_HOUR = 5
+RATE_LIMIT_PER_DAY = 20
+
+# Secret key for sessions (generate a random string)
+SECRET_KEY = "your-secret-key-here-change-this"
+
+# CORS settings
+ALLOWED_ORIGINS = ["*"]  # In production, specify your domain
+

@@ -1,0 +1,5 @@
+# Atlanta Soccer Hub — Python dependencies (local, CI, and Replit-compatible)
+flask>=3.0,<4
+flask-cors>=4.0,<6
+requests>=2.31,<3
+psycopg2-binary>=2.9,<3

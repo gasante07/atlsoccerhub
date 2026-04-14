@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Generated files
+public/
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration
+api/config.py
+.env
+.env.local
+.env.*
+!env.example.txt
+!ENV_EXAMPLE.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+api/logs/
+
+# Build artifacts
+dist/
+build/
+
+# Cache and temporary files
+.generator-cache.json
+*.cache
+.cache/
+
+# Sensitive data (double-check these are excluded)
+*.key
+*.pem
+secrets/
+.secrets/
+

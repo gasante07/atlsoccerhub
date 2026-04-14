@@ -1,0 +1,260 @@
+{
+  "hubMarketingName": "Metro Atlanta",
+  "legacyPublicRootsToRemove": ["nyc", "uk"],
+  "legacyRedirects": [
+    { "path": ["atlanta", "soccer"], "target": "/" }
+  ],
+  "brand": {
+    "siteName": "Atlanta Soccer Hub",
+    "poweredBy": "GameOn Active",
+    "tagline": "Find pickup soccer, organize games, and connect with players across Metro Atlanta",
+    "valueProposition": "The home of pickup soccer in Metro Atlanta. Whether you're after a quick run, looking to join a regular game, or want to organize your own matches—we've got you covered. From 5v5 to 11v11, all abilities welcome."
+  },
+  "footer": {
+    "networkTitle": "GameOn Active Network",
+    "networkLinks": [
+      { "label": "Organize A Game", "url": "https://organizeagame.com/" },
+      { "label": "Volleyball Hub USA", "url": "https://volleyballhubusa.com/" },
+      { "label": "Play Basketball NYC", "url": "https://playbasketballnyc.com/" },
+      { "label": "Football Hub UK", "url": "https://footballhubuk.com/" },
+      { "label": "Volleyball Hub UK", "url": "https://volleyballhub.co.uk/" }
+    ]
+  },
+  "baseUrl": "https://atlsoccerhub.com",
+  "paths": {
+    "basePath": "/",
+    "assetPrefix": "/"
+  },
+  "locale": {
+    "region": "US-GA",
+    "regionName": "GA",
+    "country": "US",
+    "language": "en-US",
+    "locale": "en_US",
+    "defaultTelephone": ""
+  },
+  "seo": {
+    "titleTemplates": {
+      "hub": "Find Soccer Games, Pickup & Leagues in Metro Atlanta | {site_name}",
+      "city": "Pickup Soccer in {city} | Find Games & Leagues | {site_name}",
+      "area": "Pickup Soccer in {area}, {city} | Find Games | {site_name}",
+      "blog": "{post_title} | {site_name}"
+    },
+    "primaryHeadTerms": ["pickup soccer", "soccer games", "pickup soccer Atlanta", "soccer Metro Atlanta"]
+  },
+  "reviews": [],
+  "events": [],
+  "meta": {
+    "authoritativeSummary": "Atlanta Soccer Hub is the place to find and organize pickup soccer games across Metro Atlanta.",
+    "inShortHub": "Atlanta Soccer Hub helps players find and organize pickup soccer games across Metro Atlanta. Join to get local game invites and connect with players near you.",
+    "inShortCity": "Find and organize pickup soccer in {city}. Get local game invites and connect with players in your area.",
+    "defaultTitle": "Find Soccer Games, Pickup & Leagues in Metro Atlanta | Atlanta Soccer Hub",
+    "defaultDescription": "Find and organize pickup soccer games across Metro Atlanta. Join Atlanta Soccer Hub to get notified when new games go live near you.",
+    "defaultImage": "/assets/images/og-default.jpg",
+    "ogImageWidth": 1200,
+    "ogImageHeight": 630,
+    "twitterHandle": "@atlsoccerhub",
+    "sameAs": [],
+    "keyTakeaways": [
+      "Find and organize pickup soccer games across Metro Atlanta.",
+      "Join to get local game invites and connect with players near you.",
+      "All levels welcome from 5v5 to 11v11. Free to join."
+    ]
+  },
+  "pexels": {
+    "apiKey": "",
+    "apiBaseUrl": "https://api.pexels.com",
+    "searchQueries": {
+      "heroVideo": ["pickup soccer", "soccer game urban", "soccer field", "soccer match"],
+      "heroPoster": ["soccer field", "pickup soccer", "soccer players"],
+      "testimonials": ["soccer team", "soccer players", "sports community"]
+    }
+  },
+  "pixabay": {
+    "apiKey": "",
+    "apiBaseUrl": "https://pixabay.com/api",
+    "rateLimit": {
+      "requests_per_minute": 100,
+      "requests_per_60_seconds": 100
+    }
+  },
+  "media": {
+    "searchQueries": {
+      "heroVideo": ["pickup soccer", "soccer game", "football match", "soccer field", "soccer training"],
+      "heroPoster": ["soccer field", "pickup soccer", "soccer players", "football game"],
+      "cityFallback": ["soccer city", "football stadium", "soccer field"],
+      "testimonials": ["soccer team", "soccer players", "sports community"]
+    },
+    "imageProviderOrder": ["pexels", "pixabay", "unsplash"]
+  },
+  "localAssets": {
+    "imagesDir": "public/assets/images",
+    "imagesWebPath": "assets/images",
+    "namePatterns": ["football", "soccer"],
+    "excludePatterns": ["logo", "football_hub", "volleyball"],
+    "extensions": [".jpg", ".jpeg", ".png", ".webp"],
+    "blogFallbackUrls": [
+      "https://images.pexels.com/photos/3873847/pexels-photo-3873847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "https://images.pexels.com/photos/9517935/pexels-photo-9517935.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    ],
+    "aboutFallbackUrl": "https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "cityFallbackImage": "football_hub_logo_2.png",
+    "videosDir": "public/assets/videos",
+    "videosWebPath": "assets/videos"
+  },
+  "unsplash": {
+    "apiKey": "",
+    "apiBaseUrl": "https://api.unsplash.com"
+  },
+  "leads": {
+    "endpoint": ""
+  },
+  "analytics": {
+    "enabled": false,
+    "ga4MeasurementId": "",
+    "eventsEndpoint": "",
+    "trackPageView": true,
+    "trackClicks": true,
+    "trackFormEngagement": true
+  },
+  "messaging": {
+    "cta": {
+      "hub": "Get Involved",
+      "city": "Find Games Near Me",
+      "area": "Find Games Near Me",
+      "nav": "Get local game invites"
+    },
+    "form": {
+      "organizerCheckboxLabel": "I run local games in {city_name} and want to list them on the site for free.",
+      "organizerCheckboxHelp": "If you already organize runs, you can advertise them here for free and reach more players."
+    },
+    "hero": {
+      "players": {
+        "title": "Find pickup soccer near you",
+        "subtitle": "Join Atlanta Soccer Hub to get local game updates, weekly runs, and last-minute spots.",
+        "bullets": [
+          "Local game invites by area",
+          "All levels welcome (5v5–11v11)",
+          "Invite friends, unlock early access",
+          "Meet players. Play more."
+        ],
+        "cta": "Get local game invites",
+        "microcopy": "No spam. Just local soccer updates. Unsubscribe anytime."
+      },
+      "organisers": {
+        "title": "Build your own soccer micro-community",
+        "subtitle": "Fill spots faster, grow recurring games, and connect with players who actually show up.",
+        "bullets": [
+          "Reach local players instantly",
+          "Grow a regular crew for weekly runs",
+          "Get updates as organizer tools launch"
+        ],
+        "cta": "Get organizer updates",
+        "microcopy": "We'll only email useful organizer updates. Unsubscribe anytime."
+      }
+    },
+    "heroMessaging": {
+      "hub": {
+        "useTabs": true,
+        "players": {
+          "title": "Find pickup soccer near you",
+          "subtitle": "Join Atlanta Soccer Hub to get local game updates, weekly runs, and last-minute spots.",
+          "bullets": [
+            "Local game invites by area",
+            "All levels welcome (5v5–11v11)",
+            "Invite friends, unlock early access",
+            "Meet players. Play more."
+          ],
+          "cta": "Get local game invites",
+          "microcopy": "No spam. Just local soccer updates. Unsubscribe anytime."
+        },
+        "organisers": {
+          "title": "Build your own soccer micro-community",
+          "subtitle": "Fill spots faster, grow recurring games, and connect with players who actually show up.",
+          "bullets": [
+            "Reach local players instantly",
+            "Grow a regular crew for weekly runs",
+            "Get updates as organizer tools launch"
+          ],
+          "cta": "Get organizer updates",
+          "microcopy": "We'll only email useful organizer updates. Unsubscribe anytime."
+        }
+      },
+      "city": {
+        "useTabs": false,
+        "template": {
+          "title": "Find pickup soccer in {city_name}",
+          "subtitle": "Get local game updates, weekly runs, and last-minute spots in {city_name}.",
+          "bullets": [
+            "Local game invites in {city_name}",
+            "All levels welcome (5v5–11v11)",
+            "Invite friends, unlock early access",
+            "Meet players. Play more."
+          ],
+          "cta": "Get {city_name} game invites",
+          "microcopy": "No spam. Just local soccer updates. Unsubscribe anytime."
+        },
+        "organisers": {
+          "title": "Build your soccer community in {city_name}",
+          "subtitle": "Fill spots faster and connect with players in {city_name}.",
+          "bullets": [
+            "Reach {city_name} players instantly",
+            "Grow a regular crew",
+            "Get updates as organizer tools launch"
+          ],
+          "cta": "Get organizer updates",
+          "microcopy": "We'll only email useful organizer updates. Unsubscribe anytime."
+        }
+      },
+      "area": {
+        "useTabs": false,
+        "template": {
+          "title": "Find pickup soccer in {area_name}",
+          "subtitle": "Get local game updates in {area_name}, {city_name}.",
+          "bullets": [
+            "Local game invites in {area_name}",
+            "All levels welcome (5v5–11v11)",
+            "Invite friends, unlock early access",
+            "Meet players. Play more."
+          ],
+          "cta": "Get {area_name} game invites",
+          "microcopy": "No spam. Just local soccer updates. Unsubscribe anytime."
+        }
+      }
+    },
+    "sections": {
+      "areaLinksTitle": "Find Soccer Across {city_name}",
+      "cityLinkTitle": "Pickup soccer in {city_name}",
+      "areaLinkTitle": "Soccer in {area_name}, {city_name}",
+      "testimonialsTitle": "What Players Are Saying",
+      "aboutTitle": "About Atlanta Soccer Hub"
+    },
+    "faq": {
+      "hubCount": 12,
+      "cityCount": null,
+      "areaCount": null
+    },
+    "cityLinks": {
+      "placement": "after_faqs"
+    },
+    "referral": {
+      "cta": "Invite friends, get early access",
+      "successMessage": "Share your link and unlock early access to new features",
+      "description": "Invite friends to join Atlanta Soccer Hub and unlock early access to new features, priority game invites, and exclusive organizer tools.",
+      "badges": {
+        "first": "First Referral",
+        "five": "Community Builder",
+        "ten": "Growth Champion",
+        "twentyFive": "Viral Leader",
+        "fifty": "Legend"
+      },
+      "benefits": [
+        "Early access to new features",
+        "Priority game invites",
+        "Exclusive organizer tools",
+        "Leaderboard recognition"
+      ]
+    }
+  }
+}

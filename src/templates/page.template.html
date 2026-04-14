@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags (injected by generator) -->
+    {{META_TITLE}}
+    {{META_DESCRIPTION}}
+    {{META_CANONICAL}}
+    {{META_ROBOTS}}
+    {{META_AUTHOR}}
+    {{META_LANGUAGE}}
+    {{META_KEYWORDS}}
+    {{META_GEO}}
+    {{META_HREFLANG}}
+    {{META_THEME_COLOR}}
+    {{META_APPLE_MOBILE_WEB_APP}}
+    {{META_FORMAT_DETECTION}}
+    {{META_REFERRER}}
+    {{OG_TAGS}}
+    {{TWITTER_TAGS}}
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ASSET_PATH}}assets/images/football_hub_logo_2.png">
+    <link rel="apple-touch-icon" href="{{ASSET_PATH}}assets/images/football_hub_logo_2.png">
+    <link rel="shortcut icon" href="{{ASSET_PATH}}assets/images/football_hub_logo_2.png">
+    
+    <!-- Performance Optimizations: Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="{{ASSET_PATH}}assets/styles/main.css?v=2.1" as="style">
+    <link rel="preload" href="{{ASSET_PATH}}assets/js/main.js?v=2.0" as="script">
+    
+    <!-- Prefetch likely next page resources -->
+    <link rel="prefetch" href="{{ASSET_PATH}}assets/js/storage.js?v=2.1" as="script">
+    <link rel="prefetch" href="{{ASSET_PATH}}assets/js/analytics.js?v=2.0" as="script">
+    <link rel="prefetch" href="{{ASSET_PATH}}assets/js/referral.js?v=2.0" as="script">
+    
+    <!-- Fonts - Load before CSS for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ASSET_PATH}}assets/styles/main.css?v=2.1">
+    
+    <!-- JSON-LD Structured Data (injected by generator) -->
+    {{JSON_LD}}
+</head>
+<body data-site-name="{{SITE_NAME}}" data-hub-marketing-name="{{HUB_MARKETING_NAME}}">
+    <!-- Navigation (Nike.com minimal style) -->
+    <header class="nav" data-nav>
+        <div class="nav__container">
+            <div class="nav__brand">
+                <a href="{{HOME_LINK}}" class="nav__logo">
+                    <img src="{{ASSET_PATH}}assets/images/football_hub_logo_2.png" alt="{{SITE_NAME}}" class="nav__logo-image">
+                    <span class="nav__logo-text">{{SITE_NAME}}</span>
+                </a>
+                <p class="nav__powered-by">Powered by {{POWERED_BY}}</p>
+            </div>
+            <button class="nav__menu-toggle" aria-label="Toggle menu" data-menu-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav__menu" data-nav-menu data-open="false">
+                <button class="nav__close" aria-label="Close menu" data-menu-close>
+                    <span>×</span>
+                </button>
+                <a href="{{HOME_LINK}}" class="nav__link">Home</a>
+                {{NAV_MENU}}
+                <button class="nav__cta btn btn--primary" data-form-trigger>{{NAV_CTA_TEXT}}</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Nike.com style - full-bleed) -->
+    <section class="hero">
+        <div class="hero__video-container"{{HERO_BACKGROUND_STYLE}}>
+            <video class="hero__video" autoplay muted loop playsinline preload="auto" id="hero-video" poster="{{HERO_POSTER}}" crossorigin="anonymous">
+                {{HERO_VIDEO_SOURCES}}
+            </video>
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            {{HERO_SECTION_CONTENT}}
+        </div>
+    </section>
+
+    {{IN_SHORT_SECTION}}
+    {{KEY_TAKEAWAYS_SECTION}}
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Answer Block -->
+        <section class="answer-block">
+            <div class="container container--content">
+                <header class="section-head">
+                    <p class="section-head__kicker">How it works</p>
+                    <h2 class="answer-block__title">How do I find, organize, and play soccer in {{CITY_NAME}}?</h2>
+                </header>
+                <ol class="answer-block__steps">
+                    {{ANSWER_STEPS}}
+                </ol>
+            </div>
+        </section>
+
+        <!-- Quick Facts Panel -->
+        <section class="quick-facts">
+            <div class="container container--content">
+                <header class="section-head">
+                    <p class="section-head__kicker">At a glance</p>
+                    <h2 class="quick-facts__title">Quick Facts</h2>
+                </header>
+                <div class="quick-facts__grid">
+                    <div class="quick-facts__item">
+                        <h3>Best Times</h3>
+                        <p>{{QUICK_FACTS_BEST_TIMES}}</p>
+                    </div>
+                    <div class="quick-facts__item">
+                        <h3>Indoor vs Outdoor</h3>
+                        <p>{{QUICK_FACTS_INDOOR_OUTDOOR}}</p>
+                    </div>
+                    <div class="quick-facts__item">
+                        <h3>Group Size</h3>
+                        <p>{{QUICK_FACTS_GROUP_SIZE}}</p>
+                    </div>
+                    <div class="quick-facts__item">
+                        <h3>Skill Levels</h3>
+                        <p>{{QUICK_FACTS_SKILL_LEVELS}}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        {{ABOUT_SECTION}}
+
+        <!-- Blog Section -->
+        {{BLOG_SECTION}}
+
+        <!-- Area Links (for city pages) -->
+        {{AREA_LINKS_SECTION}}
+
+        <!-- City Links (for homepage - before FAQs) -->
+        {{CITY_LINKS_BEFORE_FAQS}}
+
+        <!-- FAQs Section -->
+        <section class="faq">
+            <div class="container container--content">
+                <header class="section-head">
+                    <p class="section-head__kicker">Questions</p>
+                    <h2 class="faq__title">Frequently Asked Questions</h2>
+                </header>
+                <div class="faq__list">
+                    {{FAQS}}
+                </div>
+            </div>
+        </section>
+
+        <!-- City Links (for city/area pages - after FAQs) -->
+        {{CITY_LINKS_AFTER_FAQS}}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container container--content">
+            {{FOOTER_NETWORK_LINKS}}
+            <p class="footer__text">Powered by {{POWERED_BY}}</p>
+            <p class="footer__text">Last updated: {{LAST_UPDATED}}</p>
+        </div>
+    </footer>
+
+    <!-- Modal Form -->
+    <div class="modal" data-modal id="notify-modal" aria-hidden="true" aria-labelledby="modal-title">
+        <div class="modal__backdrop" data-modal-close></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close modal" data-modal-close>×</button>
+            <h2 class="modal__title" id="modal-title">Join {{SITE_NAME}}</h2>
+            <p class="modal__description" data-modal-description>Join our community to find, organize, and play pickup soccer games. We'll notify you when new games go live near you.</p>
+            <p class="modal__microcopy" data-modal-microcopy style="display: none;">No spam. Just local soccer updates. Unsubscribe anytime.</p>
+            
+            <form class="form" id="notify-form" data-form data-leads-endpoint="{{LEADS_ENDPOINT}}">
+                <!-- Honeypot field (hidden from users and screen readers) - using type="hidden" would be detected, so we use CSS hiding -->
+                <input type="text" name="website" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; visibility: hidden;" aria-label="" readonly disabled>
+                
+                <!-- Simplified fields -->
+                <div class="form__field">
+                    <label for="name" class="form__label">Name <span class="form__required">*</span></label>
+                    <input type="text" id="name" name="name" class="form__input" required autocomplete="name">
+                    <span class="form__error" data-field-error="name"></span>
+                </div>
+
+                <div class="form__field">
+                    <label for="email" class="form__label">Email <span class="form__required">*</span></label>
+                    <input type="email" id="email" name="email" class="form__input" required autocomplete="email">
+                    <span class="form__error" data-field-error="email"></span>
+                </div>
+
+                <div class="form__field">
+                    <label for="city" class="form__label">Area <span class="form__required">*</span></label>
+                    <select id="city" name="city" class="form__select" required>
+                        <option value="">Select your area</option>
+                        {{CITY_OPTIONS}}
+                    </select>
+                    <span class="form__error" data-field-error="city"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" name="consent" class="form__checkbox" required>
+                        <span>I agree to receive notifications about soccer games and pickup. <span class="form__required">*</span></span>
+                    </label>
+                    <span class="form__error" data-field-error="consent"></span>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__checkbox-label">
+                        <input type="checkbox" name="organizer_interest" class="form__checkbox" value="yes">
+                        <span>{{ORGANIZER_CHECKBOX_LABEL}}</span>
+                    </label>
+                    <p class="form__help">{{ORGANIZER_CHECKBOX_HELP}}</p>
+                </div>
+
+                <!-- Expanded fields (hidden by default) -->
+                <div class="form__expanded" data-form-expanded style="display: none;">
+                    <div class="form__field">
+                        <label for="phone" class="form__label">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="skill_level" class="form__label">Skill Level (optional)</label>
+                        <select id="skill_level" name="skill_level" class="form__select">
+                            <option value="">Select skill level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="preferred_times" class="form__label">Preferred Days/Times (optional)</label>
+                        <textarea id="preferred_times" name="preferred_times" class="form__textarea" rows="3" placeholder="e.g., Weekday evenings, Saturday mornings"></textarea>
+                    </div>
+                </div>
+
+                <button type="button" class="form__expand-link" data-form-expand-toggle>More options</button>
+
+                <!-- General form error message -->
+                <div class="form__error-message" data-form-error style="display: none;"></div>
+
+                <button type="submit" class="form__submit btn btn--primary btn--large" data-form-submit-text>Join Community</button>
+                
+                <div class="form__success" data-form-success style="display: none;">
+                    <p data-success-message>Welcome to {{SITE_NAME}}! You're now part of our community. We'll notify you when new games go live near you.</p>
+                    <p data-organizer-message style="display: none;">We'll also reach out about organizing opportunities.</p>
+                    
+                    <!-- Referral Dashboard -->
+                    <div class="referral-dashboard" data-referral-dashboard style="display: none;">
+                        <div class="referral-dashboard__header">
+                            <h3 class="referral-dashboard__title">Invite Friends, Get Early Access</h3>
+                            <p class="referral-dashboard__subtitle">Share your link and unlock early access to new features</p>
+                        </div>
+                        
+                        <div class="referral-dashboard__code">
+                            <label class="referral-dashboard__label">Your Referral Code</label>
+                            <div class="referral-code">
+                                <span class="referral-code__value" data-referral-code>REF-XXXX-XXXX</span>
+                            </div>
+                        </div>
+                        
+                        <div class="referral-dashboard__link">
+                            <label class="referral-dashboard__label">Your Referral Link</label>
+                            <div class="referral-link">
+                                <input type="text" class="referral-link__input" data-referral-link readonly>
+                                <button type="button" class="btn btn--small btn--secondary" data-referral-copy>Copy</button>
+                                <button type="button" class="btn btn--small btn--primary" data-referral-share>Share</button>
+                            </div>
+                        </div>
+                        
+                        <div class="referral-dashboard__stats">
+                            <div class="referral-stat">
+                                <span class="referral-stat__label">Referrals</span>
+                                <span class="referral-stat__value" data-referral-count>0</span>
+                            </div>
+                            <div class="referral-stat">
+                                <span class="referral-stat__label">Rank</span>
+                                <span class="referral-stat__value" data-referral-rank style="display: none;">#-</span>
+                            </div>
+                        </div>
+                        
+                        <div class="referral-dashboard__badges" data-referral-badges style="display: none;">
+                            <!-- Badges will be inserted here -->
+                        </div>
+                        
+                        <div class="referral-dashboard__footer">
+                            <button type="button" class="btn btn--link" data-referral-leaderboard>View Leaderboard</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts: inject base path and tracking config for client-side -->
+    <script>window.__BASE_PATH = "{{BASE_PATH}}";</script>
+    <script>window.__TRACKING_CONFIG__ = {{TRACKING_CONFIG_JSON}};</script>
+    <script src="{{ASSET_PATH}}assets/js/analytics.js?v=2.0"></script>
+    <script src="{{ASSET_PATH}}assets/js/storage.js?v=2.1"></script>
+    <script src="{{ASSET_PATH}}assets/js/referral.js?v=2.0"></script>
+    <script src="{{ASSET_PATH}}assets/js/main.js?v=2.0"></script>
+</body>
+</html>
+

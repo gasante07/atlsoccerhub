@@ -1,0 +1,457 @@
+{
+  "cities": [
+    {
+      "name": "Atlanta",
+      "slug": "atlanta",
+      "areas": [
+        "Midtown", "Downtown", "Buckhead", "West End", "East Atlanta", "Old Fourth Ward",
+        "Grant Park", "Virginia-Highland", "Inman Park", "Reynoldstown", "West Midtown", "Adair Park"
+      ],
+      "searchModifiers": ["pickup soccer", "5v5", "7v7", "indoor soccer", "casual soccer", "Atlanta soccer"],
+      "coordinates": { "lat": 33.749, "lng": -84.388 },
+      "postalCode": "30303",
+      "localReferences": {
+        "teams": ["Atlanta United FC", "Atlanta United 2"],
+        "venues": ["Piedmont Park", "Silverbacks Park (Heritage)", "central APS fields", "indoor turf facilities"],
+        "culture": "Atlanta's intown soccer scene mixes league players and casual pickup—from Midtown office runs to East Atlanta park games."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Find Pickup Soccer in Atlanta",
+          "heroSubtitle": "Join intown runs from Midtown to East Atlanta and everything between"
+        },
+        {
+          "heroTitle": "Atlanta Soccer Hub",
+          "heroSubtitle": "5v5 to 11v11—connect with organizers across the city"
+        }
+      ]
+    },
+    {
+      "name": "Decatur",
+      "slug": "decatur",
+      "areas": [
+        "Downtown Decatur", "Oakhurst", "Winnona Park", "Great Lakes", "Decatur Heights",
+        "Agnes Scott area", "Midway", "Lenox Place", "College Heights", "North Decatur"
+      ],
+      "searchModifiers": ["pickup soccer", "5v5", "Decatur soccer", "DeKalb soccer"],
+      "coordinates": { "lat": 33.7748, "lng": -84.2963 },
+      "postalCode": "30030",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Mason Mill Park", "Decatur High area fields", "DeKalb county parks", "indoor centers"],
+        "culture": "Decatur has a tight-knit pickup and league crowd—great for consistent weekly games."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Soccer in Decatur",
+          "heroSubtitle": "Find pickup and leagues around Decatur and DeKalb"
+        }
+      ]
+    },
+    {
+      "name": "Sandy Springs",
+      "slug": "sandy-springs",
+      "areas": [
+        "Downtown Sandy Springs", "North Springs", "Riverside", "Perimeter Center", "Hammond Drive",
+        "Morgan Falls", "HE Holmes", "Chastain Park edge", "Dunwoody border"
+      ],
+      "searchModifiers": ["pickup soccer", "5v5", "north Atlanta soccer", "OTP soccer"],
+      "coordinates": { "lat": 33.9304, "lng": -84.3733 },
+      "postalCode": "30328",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["regional sports complexes", "city parks", "indoor turf near Perimeter"],
+        "culture": "North OTP players blend rec leagues and pickup—Perimeter and Roswell Road corridors stay busy weeknights."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Pickup Soccer in Sandy Springs",
+          "heroSubtitle": "Games and leagues across Sandy Springs and the Perimeter"
+        }
+      ]
+    },
+    {
+      "name": "Brookhaven",
+      "slug": "brookhaven",
+      "areas": [
+        "Brookhaven Village", "North Brookhaven", "Buford Highway corridor", "Lynwood Park",
+        "Ashford Park", "Dresden", "Sexton Woods", "Lenox Park"
+      ],
+      "searchModifiers": ["pickup soccer", "Brookhaven soccer", "ITP soccer"],
+      "coordinates": { "lat": 33.8711, "lng": -84.3363 },
+      "postalCode": "30319",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Murphey Candler Park", "local cages", "school fields", "indoor centers"],
+        "culture": "Brookhaven sits between intown energy and OTP facilities—easy to hop to games either direction."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Soccer in Brookhaven",
+          "heroSubtitle": "Connect with players in Brookhaven and nearby intown pockets"
+        }
+      ]
+    },
+    {
+      "name": "Dunwoody",
+      "slug": "dunwoody",
+      "areas": [
+        "Perimeter Center", "Dunwoody Village", "Georgetown", "Williamsburg", "Winters Chapel",
+        "Dunwoody Panhandle", "Spruill Center area", "Vermack"
+      ],
+      "searchModifiers": ["pickup soccer", "Dunwoody soccer", "Perimeter soccer"],
+      "coordinates": { "lat": 33.9465, "lng": -84.3342 },
+      "postalCode": "30338",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Brook Run Park", "corporate campus fields", "regional indoor turf"],
+        "culture": "Dunwoody offers strong weekday evening pickup and league traffic near GA-400 and I-285."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Dunwoody Soccer Hub",
+          "heroSubtitle": "Find runs near Perimeter and Brook Run"
+        }
+      ]
+    },
+    {
+      "name": "Marietta",
+      "slug": "marietta",
+      "areas": [
+        "Marietta Square", "East Cobb", "Town Center", "Whitlock", "Fair Oaks",
+        "Plantation Pointe", "Kennesaw State edge", "Windy Hill"
+      ],
+      "searchModifiers": ["pickup soccer", "Cobb County soccer", "Marietta soccer"],
+      "coordinates": { "lat": 33.9526, "lng": -84.5499 },
+      "postalCode": "30060",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Cobb County fields", "Al Bishop complex area", "HS stadiums (rented)", "indoor turf"],
+        "culture": "Cobb's largest city anchors tons of youth and adult soccer—pickup fills weeknights at parks and complexes."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Soccer in Marietta",
+          "heroSubtitle": "Pickup and leagues from the Square to East Cobb"
+        }
+      ]
+    },
+    {
+      "name": "Smyrna",
+      "slug": "smyrna",
+      "areas": [
+        "Smyrna Market Village", "Vinings", "Jonquil", "Concord Road", "King Springs",
+        "Forest Hills", "Nickajack", "Campbell High area"
+      ],
+      "searchModifiers": ["pickup soccer", "Smyrna soccer", "Cobb soccer"],
+      "coordinates": { "lat": 33.8839, "lng": -84.5144 },
+      "postalCode": "30080",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Taylor-Brawner Park", "Tolleson Park", "Silver Comet trail-adjacent fields", "indoor facilities"],
+        "culture": "Smyrna and Vinings pull players who work intown but train OTP—great crossover pickup."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Pickup Soccer in Smyrna",
+          "heroSubtitle": "Runs around the Village, Vinings, and west Cobb"
+        }
+      ]
+    },
+    {
+      "name": "Alpharetta",
+      "slug": "alpharetta",
+      "areas": [
+        "Downtown Alpharetta", "Avalon area", "North Point", "Windward", "Haynes Bridge",
+        "Ocee", "Milton Road corridor", "Webb Bridge"
+      ],
+      "searchModifiers": ["pickup soccer", "North Fulton soccer", "Alpharetta soccer"],
+      "coordinates": { "lat": 34.0754, "lng": -84.2941 },
+      "postalCode": "30009",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Wills Park", "regional sports bubbles", "town fields", "elite training centers"],
+        "culture": "North Fulton's density means competitive and casual games—indoor picks up when heat or rain hits."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Soccer in Alpharetta",
+          "heroSubtitle": "Find pickup north of the Perimeter in Alpharetta"
+        }
+      ]
+    },
+    {
+      "name": "Roswell",
+      "slug": "roswell",
+      "areas": [
+        "Historic Roswell", "East Roswell", "Roswell Mill", "Wildwood", "Holcomb Bridge",
+        "North Point border", "Azalea Park", "Leita Thompson"
+      ],
+      "searchModifiers": ["pickup soccer", "Roswell soccer", "North Fulton pickup"],
+      "coordinates": { "lat": 34.0232, "lng": -84.3616 },
+      "postalCode": "30075",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Don White Park", "East Roswell Park", "school facilities", "indoor turf"],
+        "culture": "Roswell mixes family-heavy parks with serious adult leagues—pickup bridges both."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Roswell Soccer Community",
+          "heroSubtitle": "Organize or join runs across Roswell"
+        }
+      ]
+    },
+    {
+      "name": "Lawrenceville",
+      "slug": "lawrenceville",
+      "areas": [
+        "Downtown Lawrenceville", "Sugarloaf", "Collins Hill", "Tribble Mill", "Rhodes Jordan",
+        "Grayson corridor", "Snellville border", "Dacula corridor"
+      ],
+      "searchModifiers": ["pickup soccer", "Gwinnett soccer", "Lawrenceville soccer"],
+      "coordinates": { "lat": 33.9562, "lng": -83.988 },
+      "postalCode": "30046",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Gwinnett County parks", "soccer complexes", "school fields", "indoor arenas"],
+        "culture": "Gwinnett is one of Georgia's soccer-dense counties—weeknight 5v5 and 7v7 stay packed year-round."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Soccer in Lawrenceville",
+          "heroSubtitle": "Pickup and leagues across Gwinnett from Lawrenceville"
+        }
+      ]
+    },
+    {
+      "name": "East Point",
+      "slug": "east-point",
+      "areas": [
+        "Downtown East Point", "Conley Hills", "Woodland Hills", "Sumner Park area",
+        "Border Road", "Tri-Cities area"
+      ],
+      "searchModifiers": ["pickup soccer", "Southside Atlanta soccer", "Fulton County soccer"],
+      "coordinates": { "lat": 33.6796, "lng": -84.4394 },
+      "postalCode": "30344",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["city parks", "Tri-Cities fields", "resurfaced turf pods", "regional complexes"],
+        "culture": "Southside pickup is growing—airport-adjacent workers and locals build weeknight habits."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "East Point Soccer",
+          "heroSubtitle": "Join pickup south of I-20 near the airport corridor"
+        }
+      ]
+    },
+    {
+      "name": "College Park",
+      "slug": "college-park",
+      "areas": [
+        "Historic College Park", "Woodward Academy area", "Downtown Main Street", "College Park MARTA",
+        "Virginia Avenue", "Goode Park"
+      ],
+      "searchModifiers": ["pickup soccer", "South Metro soccer", "College Park soccer"],
+      "coordinates": { "lat": 33.6534, "lng": -84.4492 },
+      "postalCode": "30337",
+      "localReferences": {
+        "teams": ["Atlanta United FC"],
+        "venues": ["Barrett Park", "municipal fields", "shared APS/venue rentals", "indoor nearby"],
+        "culture": "College Park connects south metro players to intown and airport-shift schedules."
+      },
+      "copyVariants": [
+        {
+          "heroTitle": "Soccer in College Park",
+          "heroSubtitle": "Find games in College Park and the south metro"
+        }
+      ]
+    }
+  ],
+  "keywords": {
+    "primary": [
+      "soccer", "pickup soccer", "5v5", "casual soccer",
+      "pickup soccer Atlanta", "soccer Metro Atlanta", "soccer games Atlanta",
+      "organize soccer", "find soccer games"
+    ],
+    "location": [
+      "soccer near me", "pickup soccer near me", "soccer [city]",
+      "casual soccer [city]", "soccer games [city]"
+    ],
+    "intent": [
+      "find soccer", "organize soccer", "play soccer",
+      "join soccer game", "find pickup", "organize pickup"
+    ],
+    "modifiers": [
+      "5v5", "7v7", "11v11", "pickup",
+      "casual soccer", "indoor soccer", "weekend soccer",
+      "beginner friendly", "mixed ability", "all abilities"
+    ]
+  },
+  "faqTemplates": [
+    {
+      "question": "How do I find pickup soccer near me?",
+      "answer": "Simply fill out the form with your email and area. We'll notify you when new games go live in your neighborhood. You can also browse games organized by other players in your city or suburb."
+    },
+    {
+      "question": "What's the difference between 5v5, 7v7 and 11v11?",
+      "answer": "5v5 is the most popular for casual games—usually played on smaller fields (often indoor or turf) with 5 players per team. 7v7 is a bit bigger, and 11v11 is full-size. Most pickup games are 5v5 or 7v7, perfect for after work or on weekends."
+    },
+    {
+      "question": "How do I organize my own game?",
+      "answer": "When you join, let us know you're interested in organizing. We'll connect you with other organizers and help you set up your game. You can post when and where, and players in your area will be notified. Most organizers split the field cost between players—usually around $5-$15 per person for 5v5."
+    },
+    {
+      "question": "Do I need to be good at soccer?",
+      "answer": "Not at all! Most games are mixed ability and welcoming to everyone. Whether you're just getting back into soccer, play regularly, or haven't kicked a ball in years—you'll find games suited to your level. Many organizers specify if it's beginner-friendly, intermediate, or competitive."
+    },
+    {
+      "question": "Where can I play soccer in {city}?",
+      "answer": "Metro Atlanta has great options—from regional sports complexes and school fields to county parks and indoor turf centers. When you join, you'll get access to our directory of venues and can connect with players who know the best spots in {city}."
+    },
+    {
+      "question": "How much does it cost to play?",
+      "answer": "Costs vary by venue and location. For 5v5 at indoor or premium turf spots, expect to split an hourly field fee—often around $40-$90 per hour total, typically $5-$18 per person. Some park games are free. The organizer will let you know the cost when you sign up."
+    },
+    {
+      "question": "What should I bring to a game?",
+      "answer": "Bring cleats or turf shoes (check if indoor), shin guards (recommended), water, and a change of clothes. The organizer usually provides the ball—confirm before you head out."
+    },
+    {
+      "question": "Can I organize a regular weekly game?",
+      "answer": "Absolutely! Many organizers set up regular games—same time, same place each week. It's a great way to build a consistent group and get regular soccer in."
+    },
+    {
+      "question": "What happens if a game gets cancelled?",
+      "answer": "Organizers notify everyone if a game is cancelled—often due to weather for outdoor fields or low signup. Always check your messages before heading out, especially during storms or summer heat."
+    },
+    {
+      "question": "Are games mixed-gender?",
+      "answer": "It depends on the organizer. Some games are mixed, some are men-only, some are women-only. The organizer will specify when posting."
+    },
+    {
+      "question": "Can I join if I'm new to the area?",
+      "answer": "Definitely! Soccer is a great way to meet people in Metro Atlanta. Many players join to find a crew after moving—sign up and you'll get notified about games in your area."
+    },
+    {
+      "question": "What's the vibe like at casual games?",
+      "answer": "Most games are friendly and social—it's about a good run, fitness, and meeting people. Competitive but not toxic. Organizers usually set expectations up front."
+    },
+    {
+      "question": "How does the referral program work?",
+      "answer": "When you join Atlanta Soccer Hub, you'll get a unique referral link. Share it with friends—when they sign up, you both benefit with early access, priority invites, and community milestones."
+    },
+    {
+      "question": "What benefits do I get for referring friends?",
+      "answer": "Referrers can unlock early access, priority invites to popular games, and recognition as you hit referral milestones. It's our way of thanking you for growing the community."
+    }
+  ],
+  "answerBlockSteps": [
+    "Sign up with your email and area to join Atlanta Soccer Hub",
+    "Get notified when new pickup games go live in your neighborhood",
+    "Browse games organized by players—from 5v5 to 11v11",
+    "Sign up for games that match your schedule and ability level",
+    "Show up, play, meet other players",
+    "Want to organize? Let us know and we'll help you set up your own games",
+    "Build your local soccer community—regular games, new friends, more soccer"
+  ],
+  "quickFacts": {
+    "bestTimes": "Evenings (6-9pm) and weekends are most popular—ideal after work or Sunday pickup",
+    "indoorVsOutdoor": "Mix of turf fields, indoor centers, and park games. Indoor spikes in summer heat and storms",
+    "groupSize": "5v5 is most common (10 players), with plenty of 7v7 and occasional 11v11",
+    "skillLevels": "All abilities—from beginners to ex-college players. Most games are mixed",
+    "communitySize": "Growing community organizing games across Metro Atlanta",
+    "cost": "Typically $5-$18 per person for 5v5 when splitting field fees. Organizer confirms at signup"
+  },
+  "blogPosts": {
+    "country": [
+      {
+        "title": "The Ultimate Guide to Pickup Soccer in Metro Atlanta",
+        "slug": "ultimate-guide-pickup-soccer-metro-atlanta",
+        "excerpt": "Everything you need to find and organize pickup soccer in Metro Atlanta—from 5v5 to leagues."
+      },
+      {
+        "title": "5v5 vs 7v7 vs 11v11: Which is Right for You?",
+        "slug": "5v5-vs-7v7-vs-11v11",
+        "excerpt": "Breaking down formats so you pick the right game in Atlanta."
+      }
+    ],
+    "city": [
+      {
+        "title": "Best Places to Play 5v5 Soccer in {city}",
+        "slug": "best-places-5v5-soccer-{city_slug}",
+        "excerpt": "Top venues and parks for pickup soccer in {city}, from indoor turf to county fields."
+      },
+      {
+        "title": "Soccer Culture in {city}: A Player's Guide",
+        "slug": "soccer-culture-{city_slug}",
+        "excerpt": "How the pickup and league scene comes together in {city}."
+      }
+    ],
+    "area": [
+      {
+        "title": "Finding Soccer in {area_name}, {city_name}",
+        "slug": "soccer-{area_slug}-{city_slug}",
+        "excerpt": "Your guide to joining and organizing pickup in {area_name}, {city_name}."
+      }
+    ]
+  },
+  "culturalReferences": {
+    "terminology": {
+      "game": "pickup game",
+      "games": "pickup games",
+      "organise": "organize",
+      "pitch": "field",
+      "field": "field",
+      "court": "field",
+      "venue": "venue",
+      "facility": "facility"
+    },
+    "commonPhrases": [
+      "down for pickup?",
+      "get a game going",
+      "organize a match",
+      "find a game",
+      "join pickup",
+      "split the cost",
+      "show up and play"
+    ],
+    "localVenues": {
+      "atlanta": ["Piedmont Park", "Silverbacks Park (Heritage)", "intown APS fields", "indoor turf centers"],
+      "decatur": ["Mason Mill Park", "DeKalb parks", "school fields", "indoor facilities"],
+      "sandy-springs": ["city parks", "Perimeter-area complexes", "indoor turf"],
+      "brookhaven": ["Murphey Candler Park", "local cages", "school fields"],
+      "dunwoody": ["Brook Run Park", "Perimeter complexes", "indoor turf"],
+      "marietta": ["Cobb parks", "East Cobb complexes", "indoor facilities"],
+      "smyrna": ["Taylor-Brawner Park", "Tolleson Park", "indoor centers"],
+      "alpharetta": ["Wills Park", "North Fulton complexes", "indoor bubbles"],
+      "roswell": ["Don White Park", "East Roswell Park", "indoor nearby"],
+      "lawrenceville": ["Gwinnett parks", "county soccer complexes", "indoor arenas"],
+      "east-point": ["East Point parks", "Tri-Cities fields", "regional complexes"],
+      "college-park": ["Barrett Park", "municipal fields", "shared venue rentals"]
+    }
+  },
+  "images": {
+    "blog": [
+      "https://images.pexels.com/photos/3873847/pexels-photo-3873847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "https://images.pexels.com/photos/9517935/pexels-photo-9517935.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "https://images.pexels.com/photos/7706400/pexels-photo-7706400.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "https://images.pexels.com/photos/35499520/pexels-photo-35499520.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "https://images.pexels.com/photos/35571176/pexels-photo-35571176.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    ],
+    "about": "https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "answerSteps": {
+      "queries": [
+        "soccer sign up",
+        "soccer notification",
+        "soccer games 5v5",
+        "soccer schedule match",
+        "pickup soccer players",
+        "soccer organizer community",
+        "soccer community team"
+      ]
+    }
+  }
+}

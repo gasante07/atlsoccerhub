@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - {{ site_name }}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            padding: 2rem;
+            background: #f4f6f4;
+            color: #141820;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { margin-bottom: 2rem; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .stat-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .stat-card h3 { font-size: 0.875rem; color: #666; margin-bottom: 0.5rem; }
+        .stat-card .value { font-size: 2rem; font-weight: bold; }
+        .filters { background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .filters form { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; align-items: end; }
+        .filters label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .filters input, .filters select { width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; }
+        .filters button { padding: 0.5rem 1rem; background: #0B5E2F; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }
+        .login-form { max-width: 400px; margin: 4rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .login-form input { width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 4px; }
+        .login-form button { width: 100%; padding: 0.75rem; background: #0B5E2F; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; }
+        .error { color: #dc3545; margin-bottom: 1rem; }
+        table { width: 100%; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: #f5f5f5; font-weight: 600; }
+        .actions { display: flex; gap: 1rem; margin-top: 2rem; }
+        .btn { padding: 0.75rem 1.5rem; background: #0B5E2F; color: white; border: none; border-radius: 8px; cursor: pointer; text-decoration: none; display: inline-block; font-weight: 600; }
+        .btn-secondary { background: #666; }
+        .pagination { margin-top: 2rem; text-align: center; }
+        .pagination a { display: inline-block; padding: 0.5rem 1rem; margin: 0 0.25rem; background: white; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; }
+        .pagination a.active { background: #0B5E2F; color: white; border-color: #0B5E2F; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if logged_in %}
+            <h1>{{ site_name }} - Admin Dashboard</h1>
+            
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Members</h3>
+                    <div class="value">{{ stats.total_members }}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Organizers</h3>
+                    <div class="value">{{ stats.organizers }}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Added today</h3>
+                    <div class="value">{{ stats.leads_today | default(0) }}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Added this week</h3>
+                    <div class="value">{{ stats.leads_this_week | default(0) }}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Week over week</h3>
+                    <div class="value">{% if stats.week_over_week_pct is not none %}{% if stats.week_over_week_pct >= 0 %}+{% endif %}{{ stats.week_over_week_pct }}%{% else %}N/A{% endif %}</div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+                <form method="GET" action="/admin/dashboard">
+                    <div>
+                        <label>City</label>
+                        <select name="city">
+                            <option value="">All Cities</option>
+                            {% for item in (stats.by_city or []) %}
+                            <option value="{{ item.city }}" {% if filters.city == item.city %}selected{% endif %}>{{ item.city }} ({{ item.count }})</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div>
+                        <label>Organizer Interest</label>
+                        <select name="organizer_interest">
+                            <option value="">All</option>
+                            <option value="yes" {% if filters.organizer_interest == 'yes' %}selected{% endif %}>Yes</option>
+                            <option value="no" {% if filters.organizer_interest == 'no' %}selected{% endif %}>No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Date From</label>
+                        <input type="date" name="date_from" value="{{ filters.date_from }}">
+                    </div>
+                    <div>
+                        <label>Date To</label>
+                        <input type="date" name="date_to" value="{{ filters.date_to }}">
+                    </div>
+                    <div>
+                        <button type="submit">Filter</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Leads Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Created</th>
+                        <th>Email</th>
+                        <th>City</th>
+                        <th>Name</th>
+                        <th>Organizer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for lead in leads %}
+                    <tr>
+                        <td>{{ lead.id }}</td>
+                        <td>{{ lead.created_at }}</td>
+                        <td>{{ lead.email }}</td>
+                        <td>{{ lead.city }}</td>
+                        <td>{{ lead.name or '-' }}</td>
+                        <td>{{ 'Yes' if lead.organizer_interest == 'yes' else 'No' }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            {% if pagination.pages > 1 %}
+            <div class="pagination">
+                {% for page_num in range(1, pagination.pages + 1) %}
+                    <a href="?page={{ page_num }}&city={{ filters.city }}&organizer_interest={{ filters.organizer_interest }}&date_from={{ filters.date_from }}&date_to={{ filters.date_to }}" 
+                       {% if page_num == pagination.page %}class="active"{% endif %}>
+                        {{ page_num }}
+                    </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Actions -->
+            <div class="actions">
+                <a href="/api/export?city={{ filters.city }}&organizer_interest={{ filters.organizer_interest }}&date_from={{ filters.date_from }}&date_to={{ filters.date_to }}" 
+                   class="btn">Export CSV</a>
+                <form method="POST" action="/admin/logout" style="display: inline;">
+                    <button type="submit" class="btn btn-secondary">Logout</button>
+                </form>
+            </div>
+        {% else %}
+            <div class="login-form">
+                <h1>Admin Login</h1>
+                {% if error %}
+                <div class="error">{{ error }}</div>
+                {% endif %}
+                <form method="POST" action="/admin/login">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+# Environment Variables Configuration
+# Copy this file to .env and fill in your actual values
+# NEVER commit .env to version control!
+
+# ============================================
+# REQUIRED: API Keys (for site generation)
+# ============================================
+# Get your Pexels API key from: https://www.pexels.com/api/
+# Note: API keys are also configured in src/config/site.config.json
+# Environment variables take precedence over config file values
+PEXELS_API_KEY=your-pexels-api-key-here
+
+# Get your Pixabay API key from: https://pixabay.com/api/docs/
+# Note: API keys are also configured in src/config/site.config.json
+# Environment variables take precedence over config file values
+PIXABAY_API_KEY=your-pixabay-api-key-here
+
+# ============================================
+# OPTIONAL: Site Configuration
+# ============================================
+# Base URL for the site (defaults to https://atlsoccerhub.com)
+BASE_URL=https://atlsoccerhub.com
+
+# Sport/geo JSON under src/config/ (default: sport.config.json). Use full filename only.
+# SPORT_CONFIG_FILE=sport.config.json
+
+# Environment: development, staging, or production (defaults to production)
+ENV=production
+
+# ============================================
+# REQUIRED: API Server Configuration
+# ============================================
+# Secret key for Flask sessions (generate a strong random string)
+# Generate with: python -c "import secrets; print(secrets.token_urlsafe(32))"
+SECRET_KEY=your-secret-key-here-generate-a-strong-random-string
+
+# CORS allowed origins (comma-separated list)
+# In production, set to your domain(s), e.g., "https://atlsoccerhub.com"
+# For development, leave as "*" (allows all origins)
+# WARNING: Never use "*" in production - it's a security risk!
+ALLOWED_ORIGINS=https://atlsoccerhub.com
+
+# Leads proxy: Google Apps Script web app URL (used by /api/leads to forward submissions and avoid CORS)
+# Required when the site uses the leads form and the API is deployed at the same origin as the static site.
+LEADS_WEB_APP_URL=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+
+# ============================================
+# Replit deployment (Secrets tab)
+# ============================================
+# Set these in Replit for production (do not rely on example values in repo):
+#   SECRET_KEY           — strong random (see generator above)
+#   ALLOWED_ORIGINS      — comma-separated https origins, e.g. https://atlsoccerhub.com
+#   ENV                  — production (required for strict CORS validation in api/utils/config.py)
+#   LEADS_WEB_APP_URL    — live Google Apps Script URL for lead forwarding
+#   ADMIN_PASSWORD_HASH  — optional; see api/config pattern
+#   DATABASE_URL         — optional PostgreSQL on Replit; else SQLite path in code
+# Optional: PEXELS_API_KEY, PIXABAY_API_KEY if you regenerate with stock media on Replit build.
+# After deploy: GET /health should return {"status":"ok","api":true}; test /api/notify from the live site.
